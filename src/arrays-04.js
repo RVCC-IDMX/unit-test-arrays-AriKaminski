@@ -16,7 +16,11 @@
  * ? hint: use Math.abs() to get the absolute value of a number
  */
 function getAbsoluteSum(nums) {
-  // write your code here & return value
+  let s = 0;
+  for (let i = 0; i < nums.length; i += 1) {
+    s += nums[i].Math.abs();
+  }
+  return s;
 }
 
 /**
@@ -27,7 +31,8 @@ function getAbsoluteSum(nums) {
  * ? hint: use the filter() array method - https://youtu.be/JY5HUDMudew
  */
 function removeStrings(arr) {
-  // write your code here & return value
+  const newArr = arr.filter((item) => parseInt(item, 10) === item);
+  return newArr;
 }
 
 /**
@@ -49,7 +54,12 @@ function removeStrings(arr) {
  * ? hint 2: use the spread operator with Math.min() and Math.max()
  */
 function findMinMax(arr) {
-  // write your code here & return value
+  const newArr = [];
+  const x = Math.min(...arr);
+  const y = Math.max(...arr);
+  newArr.push(x);
+  newArr.push(y);
+  return newArr;
 }
 
 /**
